@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title><%= post.title %></title>
+</head>
+<body>
+    <header>
+        <h1><%= post.title %></h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/create">Create New Post</a>
+        </nav>
+    </header>
+ 
+    <main>
+    
+        <img class="post-image" src="<%= post.image %>" alt="<%= post.title %> Image" style="margin-left: 10px; margin-right: 20px;">
+        <div>
+        <p><%= post.content %></p>
+
+        <div class="post-actions">
+            <a href="/edit/<%= post.id %>" class="btn btn-edit">Edit Post</a>
+            <form action="/delete/<%= post.id %>" method="POST" class="btn btn-delete" style="margin: 0;">
+                <button type="submit" >Delete Post</button>
+            </form>
+        </div>
+        </div>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Foodie's Haven | All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
