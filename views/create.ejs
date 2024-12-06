@@ -22,8 +22,8 @@
             <p id="title-char-count" style="margin-top: 0;">0/25 characters</p>
 
             <label for="description">Short Description:</label>
-            <textarea id="description" name="description" placeholder="Describe your food post" maxlength="150" required></textarea>
-            <p id="description-char-count" style="margin-top: 0;">0/150 characters</p>
+            <textarea id="description" name="description" placeholder="Describe your food post" maxlength="110" required></textarea>
+            <p id="description-char-count" style="margin-top: 0;">0/110 characters</p>
 
             <label for="content">Content:</label>
             <textarea id="content" name="content" placeholder="Share the recipe, cooking methods, and tips!" required></textarea>
@@ -40,7 +40,7 @@
         
             const descriptionTextarea = document.getElementById('description');
             const descriptionCharCount = document.getElementById('description-char-count');
-            const maxDescriptionLength = 150;
+            const maxDescriptionLength = 110;
         
             // Initialize character counts
             titleCharCount.textContent = `${titleInput.value.length}/${maxTitleLength} characters`;
