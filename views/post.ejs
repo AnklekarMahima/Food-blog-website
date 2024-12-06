@@ -20,14 +20,14 @@
         <img class="post-image" src="<%= post.image %>" alt="<%= post.title %> Image" style="margin-left: 10px; margin-right: 20px;">
         <div>
         <p><%= post.content %></p>
-
         <div class="post-actions">
-            <a href="/edit/<%= post.id %>" class="btn btn-edit">Edit Post</a>
             <form action="/delete/<%= post.id %>" method="POST" class="btn btn-delete" style="margin: 0;">
-                <button type="submit" >Delete Post</button>
+                <a href="/edit/<%= post.id %>" class="btn btn-edit">Edit Post</a>
+                <button type="submit" style="width: fit-content;">Delete Post</button>
             </form>
         </div>
         </div>
+        
     
     </main>
 
